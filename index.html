@@ -12,19 +12,36 @@
 			#animate {
 			  width: 50px;
 			  height: 50px;
-			  position: absolute;
-			  background-color: red;
+			  position: absolute; 
+			  background-color: Red;
 			}	
+      #Animation {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0px ;
+        right: 0px ;
+        background-color: Blue;
+      }
+      
 		</style>
+
+    <style>
+      .Red {background-color:Red;}
+      .Blue {background-color:Blue;}
+    </style>
     </head>
 
 	<body>
 		<script src="motion.js"></script>	
-		<button type="button" onclick="myMove()">Click Me</button> 
+		<button type="button" onclick="myMove()"; class="Red">Click Me</button> 
+    <button type="button" onclick="myBox()"; class="blue">Blue</button>
 		<br><br>
 		<div id ="container">
+      <div id ="Animation"></div>
 		  <div id ="animate"></div>
 		</div>
+    
 		
 	</body>
 </html>
